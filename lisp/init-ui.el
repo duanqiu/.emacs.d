@@ -6,7 +6,7 @@
 (setq inhibit-splash-screen 1)
 (set-face-attribute 'default nil :height 160)
 (setq-default cursor-type 'bar)
-(set-default-font "-outline-幼圆-normal-normal-normal-mono-54-*-*-*-c-*-ascii-0")
+(set-default-font "-outline-幼圆-normal-normal-normal-mono-24-*-*-*-c-*-ascii-0")
 
 
 

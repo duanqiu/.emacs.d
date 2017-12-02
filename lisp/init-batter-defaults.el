@@ -91,17 +91,7 @@
 ;;设置编码
 (setq default-buffer-file-coding-system 'utf-8-unix)
 
-;;orgmode 断行
-(defun my-org-mode ()
-  (setq truncate-lines nil)
-  )
 
-(add-hook 'org-mode-hook 'my-org-mode)
-
-
-(setq org-todo-keywords
-    '((sequence "TODO(t!)" "NEXT(n)" "WAITTING(w)" "SOMEDAY(s)" "|" "DONE(d@/!)" "ABORT(a@/!)")
-     ))
 
 
 

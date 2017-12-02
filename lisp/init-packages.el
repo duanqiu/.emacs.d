@@ -24,6 +24,7 @@
 		      swiper
 		      counsel
 		      smartparens
+			  popwin
 		      ;; --- Major Mode ---
 		      js2-mode
 		      markdown-mode
@@ -36,6 +37,10 @@
 		      ;; --- Themes ---
 		      monokai-theme
 		      ;; solarized-theme
+		      ;; magit
+		      magit
+		      ;;yasnippet
+		      org-pomodoro
 		      )
   "Default packages")
 (setq package-selected-packages my/packages)
@@ -98,6 +103,9 @@
                 (setq TeX-save-query nil)
                 (imenu-add-menubar-index)
                 (define-key LaTeX-mode-map (kbd "TAB") 'TeX-complete-symbol)))
+
+;;(require yasnippet)
+;;(yas/initialize)
 
 
 
