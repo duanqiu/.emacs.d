@@ -39,8 +39,9 @@
 		      ;; solarized-theme
 		      ;; magit
 		      magit
-		      ;;yasnippet
+;;		      yasnippet
 		      org-pomodoro
+		      auctex
 		      )
   "Default packages")
 (setq package-selected-packages my/packages)
@@ -86,7 +87,7 @@
 (setq TeX-source-correlate-mode t)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-view-program-list
-   '(("Sumatra PDF" ("\"c:/Program Files (x86)/SumatraPDF/SumatraPDF.exe\" -reuse-instance"
+   '(("Sumatra PDF" ("\"c:/Program Files/SumatraPDF/SumatraPDF.exe\" -reuse-instance"
                       (mode-io-correlate " -forward-search %b %n ") " %o"))))
 
 (eval-after-load 'tex
@@ -107,6 +108,6 @@
 ;;(require yasnippet)
 ;;(yas/initialize)
 
-
+(yas-global-mode 1)
 
 (provide 'init-packages)

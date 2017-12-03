@@ -10,6 +10,7 @@
    (quote
     ("8ed752276957903a270c797c4ab52931199806ccd9f0c3bb77f6f4b9e71b9272" default)))
  '(org-agenda-files nil)
+ '(org-pomodoro-long-break-length 40)
  '(package-selected-packages
    (quote
     (magit auctex company smooth-scrolling hungry-delete swiper counsel smartparens js2-mode markdown-mode deft nodejs-repl exec-path-from-shell monokai-theme))))
