@@ -6,13 +6,15 @@
 
 (setq org-capture-templates
 
-  `(("t" "Task" entry (file+headline ,"~/Myfile/Org/inbox.org" "Task")
+  `(("t" "Task" entry (file+headline ,"~/Myfile/Org/inbox.org" "任务记录")
    "** TODO %?\n  %i\n  %a")
-  ("b" "Blog" entry (file+headline ,"~/Myfile/Org/Blog.org" "Blog")
+  ("b" "Blog" entry (file+headline ,"~/Myfile/Org/Blog.org" "感想")
    "**  %?\n  %i\n  %a")
-  ("s" "Study" entry (file+headline ,"~/Myfile/Org/inbox.org" "Study")
+  ("c" "Copy" entry (file+headline ,"~/Myfile/Org/Blog.org" "摘抄")
+   "**  %?\n  %i\n  %a")
+  ("s" "Study" entry (file+headline ,"~/Myfile/Org/Blog.org" "对某件事的理解")
    "** TODO %?\n  %i\n  %a")
-  ("n" "Note" entry (file+headline ,"~/Myfile/Org/inbox.org" "Inbox")
+  ("n" "Note" entry (file+headline ,"~/Myfile/Org/inbox.org" "临时安排事项")
    "** TODO %?\n  %i\n  %a")))
 )
 
