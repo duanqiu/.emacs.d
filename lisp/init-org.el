@@ -6,16 +6,14 @@
 
 (setq org-capture-templates
 
-  `(("i" "Index" entry (file+headline ,"~/Myfile/Org/inbox.org" "Index")
-   "* TODO %?\n  %i\n  %a")
-  ("t" "Task" entry (file+headline ,"~/Myfile/Org/inbox.org" "Task")
-   "* TODO %?\n  %i\n  %a")
-  ("b" "Blog" entry (file+headline ,"~/Myfile/Org/inbox.org" "Blog")
-   "* TODO %?\n  %i\n  %a")
+  `(("t" "Task" entry (file+headline ,"~/Myfile/Org/inbox.org" "Task")
+   "** TODO %?\n  %i\n  %a")
+  ("b" "Blog" entry (file+headline ,"~/Myfile/Org/Blog.org" "Blog")
+   "**  %?\n  %i\n  %a")
   ("s" "Study" entry (file+headline ,"~/Myfile/Org/inbox.org" "Study")
-   "* TODO %?\n  %i\n  %a")
+   "** TODO %?\n  %i\n  %a")
   ("n" "Note" entry (file+headline ,"~/Myfile/Org/inbox.org" "Inbox")
-   "* TODO %?\n  %i\n  %a")))
+   "** TODO %?\n  %i\n  %a")))
 )
 
 (global-set-key (kbd "C-c a") 'org-agenda)
@@ -31,7 +29,7 @@
 
 ;; 设置org的状态
 (setq org-todo-keywords
-    '((sequence "TODO(t!)" "NEXT(n)" "WAITTING(w)" "SOMEDAY(s)" "|" "DONE(d@/!)" "ABOLISH(a@/!)")
+    '((sequence "TODO(t!)" "NEXT(n)" "WAITTING(w)" "SOMEDAY(s!)" "|" "DONE(d@/!)" "ABOLISH(a@/!)")
       ))
 
 (provide 'init-org)
