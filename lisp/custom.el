@@ -9,7 +9,9 @@
  '(custom-safe-themes
    (quote
     ("8ed752276957903a270c797c4ab52931199806ccd9f0c3bb77f6f4b9e71b9272" default)))
- '(org-agenda-files nil)
+ '(org-agenda-files
+   (quote
+    ("c:/Users/adolph/AppData/Roaming/Myfile/Org/finished.org" "c:/Users/adolph/AppData/Roaming/Myfile/Org/inbox.org" "c:/Users/adolph/AppData/Roaming/Myfile/Org/note.org" "c:/Users/adolph/AppData/Roaming/Myfile/Org/project.org" "c:/Users/adolph/AppData/Roaming/Myfile/Org/task.org" "c:/Users/adolph/AppData/Roaming/Myfile/Org/trash.org")))
  '(org-pomodoro-long-break-length 40)
  '(package-selected-packages
    (quote

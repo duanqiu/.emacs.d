@@ -42,6 +42,8 @@
 ;;		      yasnippet
 		      org-pomodoro
 		      auctex
+;;python的包
+		      elpy
 		      )
   "Default packages")
 (setq package-selected-packages my/packages)
@@ -109,5 +111,7 @@
 ;;(yas/initialize)
 
 (yas-global-mode 1)
+
+(elpy-enable)
 
 (provide 'init-packages)
