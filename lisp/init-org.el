@@ -7,15 +7,15 @@
 (setq org-capture-templates
 
   `(("t" "Task" entry (file+headline ,"~/Myfile/Org/inbox.org" "任务记录")
-   "** TODO %?\n  %i\n  %a")
+   "** TODO %?\n  %a")
   ("b" "Blog" entry (file+headline ,"~/Myfile/Org/Blog.org" "感想")
-   "**  %?\n  %i\n  %a")
+   "**  %?\n  %a")
   ("c" "Copy" entry (file+headline ,"~/Myfile/Org/Blog.org" "摘抄")
-   "**  %?\n  %i\n  %a")
+   "**  %?\n  %a")
   ("s" "Study" entry (file+headline ,"~/Myfile/Org/Blog.org" "对某件事的理解")
-   "** TODO %?\n  %i\n  %a")
+   "** TODO %?\n  %a")
   ("n" "Note" entry (file+headline ,"~/Myfile/Org/inbox.org" "临时安排事项")
-   "** TODO %?\n  %i\n  %a")))
+   "** TODO %?\n  %a")))
 )
 
 (global-set-key (kbd "C-c a") 'org-agenda)
